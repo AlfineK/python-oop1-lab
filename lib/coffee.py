@@ -12,8 +12,8 @@ class Coffee:
     def get_size(self):
         return self._size
 
-    def set_size(self,Small, Medium, Large):
-        if Small or Medium or Large:
+    def set_size(self):
+        if self.size=="Large" or self.size=="Medium" or self.size=="Small":
             self.size=self._size
         else:
             print("size must be Small, Medium, or Large")
